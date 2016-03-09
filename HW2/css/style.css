@@ -47,7 +47,7 @@ footer {
 	width: 140px;
 	height: 57px;
 	margin-left: 25px;
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/logo.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/logo.png");
 }
 
 .btn_social {
@@ -63,15 +63,15 @@ footer {
 }
 
 #fb {
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/btn_facebook.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/btn_facebook.png");
 }
 
 #twitter {
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/btn_twitter.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/btn_twitter.png");
 }
 
 #google {
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/btn_google_plus.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/btn_google_plus.png");
 }
 
 .mid_btn {
@@ -95,7 +95,7 @@ footer {
 .sliderbox {
 	width: 960px;
 	height: 500px;
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_sliderbox.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_sliderbox.png");
 	margin-bottom: 20px;
 	border-radius: 3px;
 }
@@ -123,15 +123,15 @@ footer {
 }
 
 #services_design {
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/ic_services_webdesign.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/ic_services_webdesign.png");
 }
 
 #services_development {
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/ic_services_webdevelopment.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/ic_services_webdevelopment.png");
 }
 
 #services_bulkSMS {
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/ic_services_bulksms.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/ic_services_bulksms.png");
 }
 
 .service_content {
@@ -179,27 +179,27 @@ footer {
 
 
 #gallery1{
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_portfolio_galleryboxes_1.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_portfolio_galleryboxes_1.png");
 }
 
 #gallery2{
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_portfolio_galleryboxes_2.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_portfolio_galleryboxes_2.png");
 }
 
 #gallery3{
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_portfolio_galleryboxes_3.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_portfolio_galleryboxes_3.png");
 }
 
 #gallery4{
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_portfolio_galleryboxes_4.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_portfolio_galleryboxes_4.png");
 }
 
 #gallery5{
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_portfolio_galleryboxes_5.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_portfolio_galleryboxes_5.png");
 }
 
 #gallery6{
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_portfolio_galleryboxes_6.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_portfolio_galleryboxes_6.png");
 }
 
 .testimonials_content {
@@ -240,7 +240,7 @@ footer {
 	height: 60px;
 	border-radius: 3px;
 	margin: 10px;
-	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/master/HW2/assets/bg_ourblog_thumbnail.png");
+	background-image: url("https://raw.githubusercontent.com/zxcv79138246/WebDesign/gh-pages/HW2/assets/bg_ourblog_thumbnail.png");
 }
 
 .blog_name {

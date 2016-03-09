@@ -4,6 +4,10 @@
 	margin: 0;
 }
 
+div, p, a {
+	font-family: Arial;
+}
+
 a {
 	text-decoration: none;
 }
@@ -30,7 +34,7 @@ footer {
 }
 
 .title_font{
-	font-family: Arial-BoldMT;
+	font-weight: bold;
 	font-size: 14px;
 	color: #fe7707;
 	padding: 16px 0 16px 30px;
@@ -92,7 +96,7 @@ footer {
 }
 
 .nav div {
-	font-family: Arial-BoldMT;
+	font-weight: bold;
 	font-size: 14px;
 	color: #fe7701;
 	margin: 16px 0 16px 30px;
@@ -151,7 +155,6 @@ footer {
 .div_services div {
 	width: 199px;
 	height: 30px;
-	font-family: Arial;
 	font-size: 12px;
 	color: #404040;
 	padding: 8px 0 8px 15px;
@@ -211,7 +214,6 @@ footer {
 .testimonials_content {
 	width: 300px;
 	height: 136px;
-	font-family: Arial;
 	font-size: 12px;
 	color: #404040;
 	line-height: 1.5em;
@@ -250,14 +252,12 @@ footer {
 }
 
 .blog_name {
-	font-family: Arial;
 	font-size: 16px;
 	color: #404040;
 	margin: 14px 0px 8px 0;
 }
 
 .blog_tag {
-	font-family: Arial;
 	font-style: italic;
 	font-size: 10px;
 	color: #a54e03;
@@ -295,20 +295,17 @@ footer {
 }
 
 .websignpixel {
-	font-family: Arial;
 	font-size: 14px;
 	color: #a54e03;
 	display: inline-block;
 }
 
 .text {
-	font-family: Arial;
 	font-size: 14px;
 	color: #404040;
 }
 
 .link {
-	font-family: Arial;
 	font-size: 11px;
 	font-style: italic;
 	color: #a54e03;

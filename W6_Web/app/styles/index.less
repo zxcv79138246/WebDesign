@@ -1,0 +1,166 @@
+
+body {
+  margin: 0 auto;
+  background-color: #CE963C;
+}
+
+.coffee {
+  min-width: 1280px;
+  max-height: 1653px;
+  a {
+    text-decoration: none;
+  }
+
+  nav {
+    width: 100%;
+    height: 120px;
+    background-color: #333131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      max-width: 1280px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        font-size: 24px;
+        color: #d2d2d2;
+        margin-right: 49px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content {
+      margin: 34px 0 41px 0;
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ae772a ;
+        width: 474px;
+        height: 90px;
+        font-size: 36px;
+        color: #d2d2d2;
+        box-sizing: border-box;
+      }
+
+      .top-coffee {
+        width: 984px;;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+
+        .coffee1 {
+          border: transparent solid 5px;
+          cursor: pointer;
+        }
+
+        .coffee1:hover {
+          border-color: #E6E6D2;
+        }
+
+        .coffee-data {
+          display: flex;
+          flex-direction: column;
+          border: transparent solid 5px;
+
+          .intro{
+            width: 474px;
+            height: 257px;
+            box-sizing: border-box;
+            background-color: #8e5a07;
+            position: relative;
+            padding: 18px;
+
+            p {
+              word-break: break-all;
+              font-size: 24px;
+              line-height: 1.7;
+              color: #e6e6e6;
+            }
+            .detail {
+              width: 210px;
+              height: 36px;
+              font-size: 24px;
+              color: #e6e6e6;
+              position: absolute;
+              bottom: 25px;
+              right: 16px;
+            }
+          }
+        }
+      }
+
+      .other {
+        display: flex;
+        width: 984px;
+        justify-content: space-between;
+
+        .other-coffee {
+          display: flex;
+          flex-direction: column;
+          width: 474px;
+          height: 437px;
+          border: transparent solid 5px;
+          cursor: pointer;
+        }
+
+        .other-coffee:hover {
+          border-color: #E6E6D2;
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    height: 80px;
+    background-color: #333131;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .copyright {
+      font-size: 24px;
+      color: #c4b9b9;
+    }
+
+    .icon {
+      display: flex;
+      width: 252px;
+      justify-content: space-between;
+
+      #fb {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-image: url("../images/facebook_icon.png");
+        cursor: pointer;
+      }
+
+      #twitter {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-image: url("../images/twitter_icon.png");
+        cursor: pointer;
+      }
+
+      #ig {
+        width: 45px;
+        height: 45px;
+        background-size: cover;
+        background-image: url("../images/Instagram_icon.png");
+        cursor: pointer;
+      }
+    }
+
+  }
+}

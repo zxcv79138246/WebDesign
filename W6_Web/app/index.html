@@ -7,48 +7,55 @@
     <title>W6_Web</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet/less" href="styles/index.less">
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-      </ul>
+    <div class="coffee">
+      <nav>
+        <img src="images/logo.png" alt=""/>
+        <ul>
+          <li>HOME</li>
+          <li>FEATURES</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+          <li>RESERVE</li>
+        </ul>
+      </nav>
+      <article>
+        <img src="images/Top-Coffee.png" alt=""/>
+        <div class="content">
+          <div class="top-coffee">
+            <img class="coffee1" src="images/coffee1.png" alt=""/>
+            <div class="coffee-data">
+              <div class="title">焦糖瑪奇朵</div>
+              <div class="intro">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;融合新鮮蒸奶及香草風味糖漿後，倒入濃縮咖啡並在奶泡上覆以香甜焦糖醬，呈現多層次風味。</p>
+                <div class="detail">咖啡因(毫克)：150</div>
+              </div>
+            </div>
+          </div>
+          <div class="other">
+            <div class="other-coffee">
+              <img src="images/coffee2.png" alt=""/>
+              <div class="title">Esprosso</div>
+            </div>
+            <div class="other-coffee">
+              <img src="images/coffee3.png" alt=""/>
+              <div class="title">濃粹那提</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <div class="copyright">Copyright © 2016</div>
+        <div class="icon">
+          <div id="fb"></div>
+          <div id="twitter"></div>
+          <div id="ig"></div>
+        </div>
+      </footer>
     </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
   </body>
 </html>

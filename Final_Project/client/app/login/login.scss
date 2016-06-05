@@ -1,0 +1,11 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .login-input {
+      label {
+        width: 75px;
+      }
+  }
+}

@@ -3,10 +3,11 @@
 (function () {
 
   class NavbarController {
-    constructor($http, localStorageService) {
+    constructor($http, localStorageService, $state) {
+      this.isCollapsed = false;
       this.$http = $http;
       this.localStorageService = localStorageService;
-      this.api_token = this.localStorageService.get('api_token');
+      this.$state = $state;
       this.menu = [
         {
           title: '為什麼？',
@@ -16,12 +17,25 @@
     }
 
     $onInit() {
-
+      this.api_token = this.localStorageService.get('api_token');
     }
 
     logout() {
-      this.localStorageService.set('api_token',null);
-      this.api_token = this.localStorageService.get('api_token');
+      swal({
+        title: "確定登出",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "登出",
+        cancelButtonText: "取消"
+      },
+        isConfirm => {
+          if (isConfirm) {
+            this.localStorageService.set('api_token',null);
+            this.api_token = this.localStorageService.get('api_token');
+            this.$state.reload();
+          }
+        });
     }
   }
 

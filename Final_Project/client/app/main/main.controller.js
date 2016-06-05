@@ -8,7 +8,6 @@
       this.$http = $http;
       this.showModal = 0;
       this.localStorageService = localStorageService;
-      this.api_token = this.localStorageService.get('api_token');
       console.log(this.api_token);
     }
 
@@ -18,6 +17,7 @@
           console.log(response.data);
           this.posts = response.data;
         });
+      this.api_token = this.localStorageService.get('api_token');
     }
 
     publish() {

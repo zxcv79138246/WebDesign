@@ -16,12 +16,17 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 .navbar {
   .container {
-    display: flex;
-    justify-content: flex-start;
+
+    .navbar-header {
+      .navbar-toggle{
+
+      }
+    }
 
     .collapse {
-      margin-left: auto;
+
     }
+
   }
 }
 

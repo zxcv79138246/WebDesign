@@ -15,10 +15,10 @@
             <a ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
         <li>
-          <a ui-sref="login" ng-if="!nav.api_token">登入</a>
+          <a ui-sref="login" ng-if="!nav.localStorageService.get('api_token')">登入</a>
         </li>
         <li>
-          <a ui-sref="main" ng-if="nav.api_token" ng-click="nav.logout()">登出</a>
+          <a ui-sref="main" ng-if="nav.localStorageService.get('api_token')" ng-click="nav.logout()">登出</a>
         </li>
       </ul>
     </div>

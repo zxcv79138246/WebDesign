@@ -15,7 +15,7 @@
       <div class="col-sm-12">
         <div masonry>
           <div class="masonry-brick border-slive col-xs-12 col-sm-6 col-md-4" ng-repeat="post in $ctrl.posts">
-            <i class="fa fa-times fa-2x" aria-hidden="true" ng-click="$ctrl.deletePost(post.id)"></i>
+            <i class="fa fa-times fa-2x" aria-hidden="true" ng-click="$ctrl.deletePost(post.id)" ng-if="$ctrl.localStorageService.get('api_token')"></i>
             <div class="post-name">
               <h3>{{post.name}}</h3>
             </div>
@@ -51,7 +51,7 @@
       <div class="comment-item border-slive" ng-repeat="comment in $ctrl.postDetail.comments">
         <label class="col-xs-2">{{comment.name}}</label>
         <label class="col-xs-9">{{comment.body}}</label>
-        <i class="fa fa-times col-xs-1" aria-hidden="true" ng-click="$ctrl.deleteComment(comment.id, comment.post_id)"></i>
+        <i class="fa fa-times col-xs-1" aria-hidden="true" ng-click="$ctrl.deleteComment(comment.id, comment.post_id)" ng-if="$ctrl.localStorageService.get('api_token')"></i>
       </div>
     </div>
   </div>

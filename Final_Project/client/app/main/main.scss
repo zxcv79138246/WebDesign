@@ -48,47 +48,54 @@
     }
 
     .article-div {
-      .masonry-brick {
-        background-color: white;
-        //min-width: 300px;
-        margin-top: 1em;
-        min-height: 300px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        padding: 0 0.8em 1em 0;
-        position: relative;
-        box-sizing: border-box;
+      .masonry {
 
-        .fa-times {
-          position: absolute;
-          top: 0.4em;
-          right: 0.5em;
-          cursor: pointer;
-        }
+        .masonry-brick {
+          padding: 0.5em;
 
-        .fa-times:hover {
-          color: red;
-        }
+          .item {
+            background-color: white;
+            margin-top: 1em;
+            min-height: 300px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.8em 1em 0;
+            position: relative;
+            box-sizing: border-box;
 
-        .post-name {
-          padding: 0 3em;
-        }
+            .fa-times {
+              position: absolute;
+              top: 0.4em;
+              right: 0.5em;
+              cursor: pointer;
+            }
 
-        .post-body {
-          font-size: 1.2em;
-          padding: 0 2em;
-        }
+            .fa-times:hover {
+              color: red;
+            }
 
-        .more {
-          display: flex;
-          justify-content: flex-end;
-          margin-top: auto;
+            .post-name {
+              padding: 0 3em;
+            }
 
-          .time {
-            margin-right: auto;
-            padding-left: 2em;
+            .post-body {
+              font-size: 1.2em;
+              padding: 0 2em;
+            }
+
+            .more {
+              display: flex;
+              justify-content: flex-end;
+              margin-top: auto;
+
+              .time {
+                margin-right: auto;
+                padding-left: 2em;
+              }
+            }
           }
+
         }
       }
     }

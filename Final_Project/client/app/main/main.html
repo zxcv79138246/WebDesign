@@ -12,9 +12,9 @@
     </div>
 
     <div class="row article-div">
-      <div class="col-sm-12">
-        <div masonry>
-          <div class="masonry-brick border-slive col-xs-12 col-sm-6 col-md-4" ng-repeat="post in $ctrl.posts">
+      <div masonry class="masonry">
+        <div class="masonry-brick col-xs-12 col-sm-6 col-md-4" ng-repeat="post in $ctrl.posts">
+          <div class="item border-slive">
             <i class="fa fa-times fa-2x" aria-hidden="true" ng-click="$ctrl.deletePost(post.id)" ng-if="$ctrl.localStorageService.get('api_token')"></i>
             <div class="post-name">
               <h3>{{post.name}}</h3>

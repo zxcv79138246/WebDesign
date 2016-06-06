@@ -1,7 +1,7 @@
 <div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
+      <button ng-class="nav.hamburgerClass" type="button" ng-click="nav.clickHamburger()">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -9,18 +9,20 @@
       </button>
       <a href="/" class="navbar-brand">酒店小姐辛酸血淚史</a>
     </div>
-    <div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+    <div ng-class="nav.navClass" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+        <li ng-repeat="item in nav.menu" ui-sref-active="active" class="nav-item">
             <a ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
-        <li>
-          <a ui-sref="login" ng-if="!nav.localStorageService.get('api_token')">登入</a>
+        <li  class="nav-item" ng-if="!nav.localStorageService.get('api_token')">
+          <a ui-sref="login" >登入</a>
         </li>
-        <li>
-          <a ui-sref="main" ng-if="nav.localStorageService.get('api_token')" ng-click="nav.logout()">登出</a>
+        <li class="nav-item" ng-if="nav.localStorageService.get('api_token')">
+          <a ui-sref="main"  ng-click="nav.logout()">登出</a>
         </li>
       </ul>
     </div>
+
+    <div class="black-back" ng-if="nav.isCollapsed"></div>
   </div>
 </div>

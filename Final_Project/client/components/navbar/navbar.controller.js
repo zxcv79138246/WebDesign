@@ -8,9 +8,11 @@
       this.$http = $http;
       this.localStorageService = localStorageService;
       this.$state = $state;
+      this.navClass = "nav-collapse";
+      this.hamburgerClass = "navbar-toggle";
       this.menu = [
         {
-          title: '為什麼？',
+          title: '關於我們',
           state:  "main"
         }
       ];
@@ -36,6 +38,16 @@
             this.$state.reload();
           }
         });
+    }
+
+    clickHamburger() {
+      this.isCollapsed = !this.isCollapsed;
+      if (this.isCollapsed) {
+        this.navClass = "nav-collapse nav-collapse-appear";
+      }
+      else {
+        this.navClass = "nav-collapse";
+      }
     }
   }
 

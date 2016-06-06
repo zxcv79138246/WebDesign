@@ -131,7 +131,7 @@
 
     .post-body {
       font-size: 1.5em;
-      padding-left: 2em;
+      padding: 0 2em;
     }
 
     .add-comment {
@@ -187,12 +187,8 @@
 
 @media screen and (min-width: 961px) {
   .main {
-    .container {
-      .article-div {
-        .masonry-brick {
-
-        }
-      }
+    .publish-div {
+      padding: 0;
     }
   }
 }
@@ -215,6 +211,9 @@
 
 @media screen and (max-width: 768px) {
   .main {
+    .publish-div {
+      padding: 0.5em;
+    }
     .info-modal {
       .add-comment {
         textarea {

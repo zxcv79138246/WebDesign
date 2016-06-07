@@ -9,7 +9,7 @@
       this.localStorageService = localStorageService;
       this.$state = $state;
       this.navClass = "nav-collapse";
-      this.hamburgerClass = "navbar-toggle";
+      this.hamburgerClass = "navbar-toggle nav-hamburger";
       this.menu = [
         {
           title: '關於我們',
@@ -38,15 +38,18 @@
             this.$state.reload();
           }
         });
+      
     }
 
     clickHamburger() {
       this.isCollapsed = !this.isCollapsed;
       if (this.isCollapsed) {
         this.navClass = "nav-collapse nav-collapse-appear";
+        this.hamburgerClass = "navbar-toggle nav-hamburger nav-hamburger-active";
       }
       else {
         this.navClass = "nav-collapse";
+        this.hamburgerClass = "navbar-toggle nav-hamburger";
       }
     }
   }

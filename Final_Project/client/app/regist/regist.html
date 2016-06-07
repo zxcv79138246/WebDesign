@@ -1,0 +1,23 @@
+<div class="regist">
+  <div class="regist-input">
+    <div class="row">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" ng-model="$ctrl.name">
+    </div>
+    <div class="row">
+      <label for="account">Email：</label>
+      <input type="text" id="account" ng-model="$ctrl.email">
+    </div>
+    <div class="row">
+      <label for="password">密碼：</label>
+      <input type="password" id="password" ng-model="$ctrl.password">
+    </div>
+    <div class="row">
+      <label for="passwordConfirm">再輸入一次密碼：</label>
+      <input type="password" id="passwordConfirm" ng-model="$ctrl.passwordConfirm">
+    </div>
+  </div>
+  <div class="row">
+    <button class="btn btn-default" ng-click="$ctrl.regist()">註冊</button>
+  </div>
+</div>

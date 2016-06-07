@@ -32,6 +32,51 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @media screen and (max-width: 767px) {
   .navbar {
     .container {
+
+      .nav-hamburger {
+        position: relative;
+
+        .icon-bar {
+          transition:  0.5s;
+        }
+
+        .icon-bar:nth-child(3) {
+          position: absolute;
+          top:33.34%;
+          left:10px;
+        }
+
+      }
+
+      .nav-hamburger-active {
+        background-color: transparent;
+
+        .icon-bar {
+          background-color: white;
+        }
+
+        .icon-bar:nth-child(1) {
+          width: 0;
+        }
+
+        .icon-bar:nth-child(2) {
+          transform: rotate(-45deg);
+        }
+
+        .icon-bar:nth-child(3) {
+          transform: rotate(45deg);
+        }
+
+        .icon-bar:nth-child(4) {
+          width: 0;
+        }
+
+      }
+
+      .nav-hamburger-active:hover {
+        background-color: transparent;
+      }
+
       .nav-collapse {
         position: fixed;
         right: -100vw;
@@ -68,9 +113,9 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
         position: fixed;
         top: 0;
         left: 0;
-        background-color: black;
-        opacity: 0.5;
+        background-color: rgba(0,0,0,0.9);
         z-index: 20;
+        -webkit-filter: blur(10px);
       }
     }
   }
@@ -80,5 +125,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 /* inject:scss */
 @import 'login/login';
 @import 'main/main';
+@import 'regist/regist';
 @import '../components/footer/footer';
 /* endinject */

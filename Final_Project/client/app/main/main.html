@@ -4,7 +4,7 @@
       <div class="publish col-xs-12 col-md-8 border-slive">
         <div class="publich-name">
           <label for="name-input">稱呼：</label>
-          <input type="text" id="name-input" placeholder="我是誰？(預設匿名)" ng-model="$ctrl.name">
+          <input type="text" id="name-input" placeholder="匿名" ng-model="$ctrl.name">
         </div>
         <textarea name="" id=""  rows="5" class="border-slive" placeholder="我想說些話!!" ng-model="$ctrl.body"></textarea>
         <button class="btn btn-primary" ng-click="$ctrl.publish()">發布</button>
@@ -26,7 +26,9 @@
               <div class="time">
                 <label>{{post.created_at | dateOnly}}</label>
               </div>
-              <button class="btn btn-info" ng-click="$ctrl.showPostModal(post.id)">更多及評論</button>
+              <button class="btn btn-black" ng-click="$ctrl.showPostModal(post.id)">
+                <span>更多及評論</span>
+              </button>
             </div>
           </div>
         </div>
@@ -45,7 +47,9 @@
     <div class="add-comment border-slive">
       <input type="text" placeholder="匿名" class="border-slive col-sm-2 col-xs-4" ng-model="$ctrl.commentName">
       <textarea  rows="1" class="border-slive col-sm-8 col-xs-12" ng-model="$ctrl.commentBody"></textarea>
-      <button class="btn btn-success" ng-click="$ctrl.addComment($ctrl.postDetail.id)">送出</button>
+      <button class="btn btn-black" ng-click="$ctrl.addComment($ctrl.postDetail.id)">
+        <span>送出</span>
+      </button>
     </div>
     <div class="all-comments">
       <div class="comment-item border-slive" ng-repeat="comment in $ctrl.postDetail.comments">

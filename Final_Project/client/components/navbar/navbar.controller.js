@@ -10,12 +10,6 @@
       this.$state = $state;
       this.navClass = "nav-collapse";
       this.hamburgerClass = "navbar-toggle nav-hamburger";
-      this.menu = [
-        {
-          title: '關於我們',
-          state:  "main"
-        }
-      ];
     }
 
     $onInit() {
@@ -38,7 +32,7 @@
             this.$state.reload();
           }
         });
-      
+
     }
 
     clickHamburger() {

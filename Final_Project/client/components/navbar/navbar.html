@@ -11,8 +11,8 @@
     </div>
     <div ng-class="nav.navClass" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ui-sref-active="active" class="nav-item">
-            <a ui-sref="{{item.state}}" ng-click="nav.clickHamburger()">{{item.title}}</a>
+        <li class="nav-item">
+          <a ui-sref="main" ng-click="nav.clickHamburger()">關於我們</a>
         </li>
         <li class="nav-item" ng-if="nav.localStorageService.get('api_token')">
           <a ui-sref="regist" ng-click="nav.clickHamburger()">新增管理員</a>

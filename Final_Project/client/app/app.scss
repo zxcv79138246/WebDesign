@@ -14,11 +14,46 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   padding: 0.2em 0;
 }
 
+body {
+  background-image: url("../assets/images/black_linen_v2_@2X.png");
+}
+
 .navbar {
+  border:none;
+  border-bottom: 1px solid #000;
+  background-color: #111;
+  opacity: 0.8;
+
+
+
   .container {
     .navbar-header {
+      background-color: transparent;
+      border: none;
+
+      .navbar-brand{
+        color: white;
+      }
+
       .navbar-toggle {
         z-index: 30;
+      }
+    }
+
+    #navbar-main {
+      .navbar-nav {
+
+        .nav-item {
+          a{
+            color: silver;
+          }
+
+          &:hover {
+            a{
+              color: white;
+            }
+          }
+        }
       }
     }
 
@@ -32,12 +67,17 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @media screen and (max-width: 767px) {
   .navbar {
     .container {
+      .navbar-header {
+        background-color: #111;
+      }
 
       .nav-hamburger {
         position: relative;
+        border: 1px solid transparent;
 
         .icon-bar {
           transition:  0.5s;
+          background-color: white;
         }
 
         .icon-bar:nth-child(3) {
@@ -47,13 +87,15 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
         }
 
       }
+      .nav-hamburger:hover {
+        background-color: transparent;
+      }
+      .nav-hamburger:active {
+        background-color: transparent;
+      }
 
       .nav-hamburger-active {
         background-color: transparent;
-
-        .icon-bar {
-          background-color: white;
-        }
 
         .icon-bar:nth-child(1) {
           width: 0;
@@ -79,21 +121,26 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
       .nav-collapse {
         position: fixed;
-        right: -100vw;
+        right: -30vw;
         transition: 0.5s ease-out;
         z-index: 30;
+        opacity: 0;
 
         .navbar-nav {
-          width: 50vw;
+          width: 0;
+          margin: 0;
 
           .nav-item {
-            border-bottom: 1px solid white;
+            padding: 20px;
+            margin: 0 50px;
+            border-bottom: 1px solid #666;
 
             a {
-              background-color: black;
               color: white;
               display: flex;
               justify-content: center;
+              padding: 0;
+              background: none;
             }
           }
 
@@ -105,6 +152,11 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
       .nav-collapse-appear {
         right: 0;
+        opacity: 1;
+
+        .navbar-nav {
+          width: 100vw;
+        }
       }
 
       .black-back {

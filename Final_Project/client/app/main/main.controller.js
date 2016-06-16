@@ -50,6 +50,10 @@
       this.showModal = 1;
     }
 
+    closeModal(){
+      this.showModal = 0;
+    }
+
     deletePost(postID){
       this.$http.delete('http://hotel-miss.ddns.net/api/v1/posts/' + postID, {
         params: {

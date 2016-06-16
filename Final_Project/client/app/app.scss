@@ -129,6 +129,7 @@ body {
         .navbar-nav {
           width: 0;
           margin: 0;
+          transition: 0.5s ease-out;
 
           .nav-item {
             padding: 20px;

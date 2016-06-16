@@ -26,6 +26,7 @@
               <div class="time">
                 <label>{{post.created_at | dateOnly}}</label>
               </div>
+              <div class="fb-like" data-href="http://52.193.76.125:9001/{{post.id}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
               <button class="btn btn-black" ng-click="$ctrl.showPostModal(post.id)">
                 <span>更多及評論</span>
               </button>
@@ -38,6 +39,7 @@
 
   <div class="back-black" ng-if="$ctrl.showModal" ng-click="$ctrl.showModal = 0"></div>
   <div class="info-modal border-slive" ng-if="$ctrl.showModal">
+    <i class="fa fa-times fa-2x" aria-hidden="true" ng-click="$ctrl.closeModal()"></i>
     <div class="post-name">
       <h2>{{$ctrl.postDetail.name}}</h2>
     </div>
@@ -52,10 +54,14 @@
       </button>
     </div>
     <div class="all-comments">
-      <div class="comment-item border-slive" ng-repeat="comment in $ctrl.postDetail.comments">
-        <label class="col-xs-2">{{comment.name}}</label>
-        <label class="col-xs-9">{{comment.body}}</label>
-        <i class="fa fa-times col-xs-1" aria-hidden="true" ng-click="$ctrl.deleteComment(comment.id, comment.post_id)" ng-if="$ctrl.localStorageService.get('api_token')"></i>
+      <div class="comment-item border-slive row" ng-repeat="comment in $ctrl.postDetail.comments">
+          <div class="col-xs-2">
+            <label>{{comment.name}}</label>
+          </div>
+          <div class="col-xs-9">
+            <label>{{comment.body}}</label>
+          </div>
+          <i class="fa fa-times col-xs-1" aria-hidden="true" ng-click="$ctrl.deleteComment(comment.id, comment.post_id)" ng-if="$ctrl.localStorageService.get('api_token')"></i>
       </div>
     </div>
   </div>

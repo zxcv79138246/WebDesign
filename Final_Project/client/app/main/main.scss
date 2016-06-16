@@ -147,13 +147,16 @@
               justify-content: flex-end;
               margin-top: auto;
 
+              .fb-like {
+                margin-right: auto;
+              }
+
               .time {
                 margin-right: auto;
                 padding-left: 2em;
               }
             }
           }
-
         }
       }
     }
@@ -172,6 +175,8 @@
 
   .info-modal {
     width: 60vw;
+    max-height: 80vh;
+    overflow: scroll;
     background-color: white;
     position: fixed;
     top: 50%;
@@ -182,6 +187,16 @@
     border-radius: 1px;
     box-shadow: 3px 3px 10px 1px;
 
+    .fa-times {
+      position: absolute;
+      right: 0.9em;
+      top: 0.5em;
+      cursor: pointer;
+    }
+
+    .fa-times:hover {
+      color: red;
+    }
 
     .post-name{
       padding-left: 3em;
@@ -228,6 +243,7 @@
 
         label {
           margin-top: 5px;
+          word-wrap: break-word;
         }
 
         label:nth-child(2) {

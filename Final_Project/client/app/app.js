@@ -17,5 +17,5 @@ angular.module('finalProjectApp', [
     localStorageServiceProvider
       .setPrefix('finalProjectApp')
       .setStorageType('sessionStorage')
-      .setNotify(true, true)
+      .setNotify(true, true);
   });

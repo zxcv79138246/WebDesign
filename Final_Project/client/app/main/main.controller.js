@@ -8,13 +8,11 @@
       this.$http = $http;
       this.showModal = 0;
       this.localStorageService = localStorageService;
-      console.log(this.api_token);
     }
 
     $onInit() {
       this.$http.get('http://hotel-miss.ddns.net/api/v1/posts')
         .then(response => {
-          console.log(response.data);
           this.posts = response.data;
         });
       this.api_token = this.localStorageService.get('api_token');
@@ -82,7 +80,6 @@
             this.$http.get('http://hotel-miss.ddns.net/api/v1/posts/' + postID)
               .then(response => {
                 this.postDetail = response.data;
-                this.postDetail.created_at = new Date('yyyy-MM-dd');
               });
           })
       }
@@ -100,10 +97,15 @@
           this.$http.get('http://hotel-miss.ddns.net/api/v1/posts/' + postID)
             .then(response => {
               this.postDetail = response.data;
-              this.postDetail.created_at = new Date('yyyy-MM-dd');
             });
         });
     }
+
+    toDate(date){
+      date = new Date();
+      return date;
+    }
+
   }
 
   angular.module('finalProjectApp')

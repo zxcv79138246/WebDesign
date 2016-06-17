@@ -8,16 +8,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <base href="/">
     <title>酒店小姐心酸血淚史</title>
-    <meta name="description" content="">
+    <meta name="description" content="每個光鮮亮麗的外表背後，都曾經過布國人知的黑夜。">
     <meta name="viewport" content="width=device-width">
-    <meta property="og:url"  content="http://52.193.76.125:9001" />
+
+    <meta property="og:url"  content="http://52.193.76.125:9001/" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="酒店小姐心酸血淚史" />
     <meta property="og:description"   content="每個光鮮亮麗的外表背後，都曾經過布國人知的黑夜。" />
-    <!--<meta property="og:image"         content="" />-->
+    <meta property="og:image"         content="https://s.yimg.com/rk/AD08655836/o/725338244.jpg" />
     <meta property="og:site_name" content="酒店小姐心酸血淚史">
     <meta property="fb:admins" content="100000274468544"/>
     <meta property="fb:app_id" content="294005534278698"/>
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
@@ -32,6 +34,7 @@
   </head>
   <body ng-app="finalProjectApp">
   <!--facebook api-->
+    <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -120,5 +123,7 @@
       <script src="components/util/util.service.js"></script>
       <!-- endinjector -->
     <!-- endbuild -->
+
+    <script src="http://connect.facebook.net/en_US/sdk.js"></script>
   </body>
 </html>
